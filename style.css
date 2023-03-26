@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("./fonts/roboto-regular.woff") format("woff");
+    src: url("./fonts/roboto-regular.woff2") format("woff");
+}
+@font-face{
+    font-family: "Roboto Black";
+    src: url("./fonts/roboto-black.woff") format("woff");  
+    src: url("./fonts/roboto-black.woff2") format("woff");  
+}
+body{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Roboto Regular";
+}
+.wrapper{
+    background-color: #050404;
+    height: 2347px;   
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 130px;
+}
+.header{
+    padding: 60px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    width: 100px;
+    height: 55pxS;
+}
+.nav__items{
+    list-style: none;
+    margin: o;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 552px;
+}
+.nav__link{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.active{
+    color: #FFB822;
+}
+.header__search{
+    width: 280px;
+    height: 55px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #9965E3;
+    border-radius: 15px;
+    padding: 0 17px 0 17px;
+
+}
+.search__input{
+    background-color: #050404;
+    outline: 0;
+    border: 0;
+    font-size: 22px;
+    font-family: "Roboto Regular";
+    text-transform: uppercase;
+    font-weight: 900;   
+    color: #ffffff; 
+    padding-right: 10px;
+    width: 230px;
+}
+.search__input::placeholder{
+    color: #ffffff;
+}
+.search__button{
+    background-color: #050404;
+    background-image: url("./image/search.svg");
+    background-size: cover;
+    outline: 0;
+    border: 0;   
+    width: 40px;
+    height: 40px;
+    padding: 10px 14px 13px 0;
+    cursor: pointer;
+}
+.hero{
+    height: 780px;
+    width: 100%;
+    position: relative;
+}
+.hero__background-image{
+    height: 100%;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    opacity: 0.5;
+}
+.hero__description{
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute; 
+    width: 839px;
+    top: 40%;    
+    left: 50%;
+    transform: translateX(-50%);   
+}
+.hero__title{
+    font-family: "Roboto Black";
+    color: #FFB822;
+    font-size: 100px;
+    font-weight: 900; 
+    margin: 0;
+}
+.hero__subtitle{
+    font-family: "Roboto Black";
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+}
