@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Roboto Regular";
     src: url("./fonts/roboto-regular.woff") format("woff");
-    src: url("./fonts/roboto-regular.woff2") format("woff");
+    src: url("./fonts/roboto-regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Roboto Black";
     src: url("./fonts/roboto-black.woff") format("woff");  
-    src: url("./fonts/roboto-black.woff2") format("woff");  
+    src: url("./fonts/roboto-black.woff2") format("woff2");  
 } 
 
 body {
@@ -30,13 +30,17 @@ body {
 .header {
     padding: 60px 0 80px 0;
     height: 55px;
+    white-space: nowrap;
+    /* max-width: 100%; */
 }
 
 .header__logo_wrapper {
-    width: 100px;
+    width: 108px;
     height: 100%;
-    float: left;
-    margin-right: 112px;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 107px;
 }
 
 .header__logo {
@@ -46,7 +50,10 @@ body {
 
 .header__nav {
     height: 100%;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 552px;
+    margin-right: 122px;
 }
 
 .nav__items {
@@ -54,13 +61,13 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 15px;
-    display: block;
 }
 
 .nav__item {
     display: inline-block;
-    margin-right: 38px;
+    vertical-align: middle;
+    height: 16px;
+    margin-right: 32px;
 }
 
 .nav__item:last-child {
@@ -71,6 +78,9 @@ body {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 
 .active {
@@ -84,13 +94,14 @@ body {
     cursor: pointer;
     border: 3px solid #9965E3;
     border-radius: 10px;
-    float: right;
     background-color: #050404;
     background-image: url("./image/search.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right 5px;
     background-size: 40px;   
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .search__input {
@@ -126,12 +137,14 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 0 150px 0 150px;
 }
 
 .hero__description {
     max-width: 839px;
-    padding-top: 300px;
-    padding-left: 195px;
+    margin: auto;
+    padding-top: 13.5em;
+    padding-left: 2em;
 }
 
 .hero__title {
